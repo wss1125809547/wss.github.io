@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>个人简历</title>
+		<meta name="author" content="Alvaro Trigo Lopez" />
+		<meta name="description" content="fullPage fixed full-screen backgrounds." />
+		<meta name="keywords" content="fullpage,jquery,demo,screen,fixed,fullscreen,backgrounds,full-screen" />
+		<meta name="Resource-type" content="Document" />
+
+		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="examples.css" />
+		<style>
+			h1 {
+				font-size: 5em;
+				font-family: arial, helvetica;
+				color: white;
+				margin: 0;
+				padding: 0;
+			}
+			
+			#section0,
+			#section1,
+			#section2,
+			#section3 {
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			
+			#section0 {
+				background-image: url(imgs/bg1.jpg);
+				padding: 6% 0 0 0;
+			}
+			
+			#section2 {
+				background-image: url(imgs/bg3.jpg);
+				padding: 2% 0 0 0;
+			}
+			
+			#section3 {
+				background-image: url(imgs/bg4.jpg);
+				padding: 6% 0 0 0;
+			}
+			
+			#slide1 {
+				background-image: url(imgs/bg2.jpg);
+				padding: 3% 0 0 0;
+			}
+			
+			#slide2 {
+				background-image: url(imgs/bg5.jpg);
+				padding: 3% 0 0 0;
+			}
+			
+			#olList {
+				margin-top: 100px;
+				font-size: 30px;
+				color: blueviolet;
+				padding-left: 100px;
+			}
+			
+			#olList li {
+				list-style: hangul;
+			}
+			
+			#flex {
+				display: flex;
+				justify-content: space-around;
+			}
+			
+			.ul-list {
+				text-align: left;
+				padding-left: 50px;
+				font-size: 30px;
+				padding-top: 50px;
+			}
+			
+			#hh {
+				text-align: left;
+			}
+			
+			.fade {
+				height: 300px;
+				width: 420px;
+				opacity: 0.8;
+				cursor: pointer;
+				padding-top: 200px;
+			}
+			
+			.fade:hover {
+				opacity: 0.4;
+			}
+			
+			.img-one {
+				display: flex;
+				justify-content: space-around;
+			}
+			
+			.p-text {
+				text-align: center;
+				margin-top: 50px;
+				color: hsla(360, 60%, 70%, 0.9);
+			}
+			
+			div.panel,
+			p.flip {
+				margin: 0px;
+				padding: 1px;
+				background: green;
+				border: solid 1px #c3c3c3;
+				width: 420px;
+				box-sizing: border-box;
+			}
+			
+			div.panel {
+				height: 110px;
+				display: none;
+				text-align: left;
+				padding: 10px;
+			}
+			
+			#to-top {
+				position: absolute;
+				right: 50px;
+				bottom: 50px;
+				color: white;
+				z-index: 10;
+				background-color: green;
+				/*display: none;*/
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<button id="to-top">返回到顶部 </button>
+
+		<div id="fullpage">
+			<div class="section " id="section0">
+				<h1 style="margin-bottom: 100px;">个人简历</h1>
+				<p class="p-text">hi,我是一名前端攻城狮;</p>
+				<p class="p-text">希望找关于做前端的工作.</p>
+				<p class="p-text">学历本科，兴趣爱好广泛;</p>
+				<p class="p-text">了解更多，往下滑动^_^.</p>
+			</div>
+			<div class="section" id="section1">
+				<div class="slide" id="slide1">
+					<h1>项目简图</h1>
+					<div class="img-one">
+						<div id="">
+							<img src="imgs/work-1.jpg" alt="" class="fade " />
+
+							<p class="flip" data-index="1">喜欢就点击吧^_^</p>
+							<div class="panel">
+
+								<p>开发时间：<small>2016年6月</small></p>
+								<p>工作详情：<small>框架设计及前端制作</small></p>
+
+							</div>
+						</div>
+
+						<div id="">
+							<img src="imgs/work-2.jpg" alt="" class="fade " />
+
+							<p class="flip" data-index="2">喜欢就点击吧^_^</p>
+							<div class="panel">
+
+								<p>开发时间：<small>2016年6月</small></p>
+								<p>工作详情：<small>框架设计及前端制作</small></p>
+
+							</div>
+						</div>
+						<div id="">
+							<img src="imgs/work-3.jpg" alt="" class="fade " />
+
+							<p class="flip" data-index="3">喜欢就点击吧^_^</p>
+
+							<div class="panel">
+
+								<p>开发时间：<small>2016年6月</small></p>
+								<p>工作详情：<small>框架设计及前端制作</small></p>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="slide" id="slide2">
+					<h1>项目简图</h1>
+					<div class="img-one">
+						<div id="">
+							<img src="imgs/work-4.jpg" alt="" class="fade " />
+
+							<p class="flip" data-index="4">喜欢就点击吧^_^</p>
+							<div class="panel">
+
+								<p>开发时间：<small>2015年6月</small></p>
+								<p>工作详情：<small>页面设计及前端制作</small></p>
+
+							</div>
+						</div>
+						<div id="">
+							<img src="imgs/work-5.jpg" alt="" class="fade " />
+
+							<p class="flip" data-index="5">喜欢就点击吧^_^</p>
+							<div class="panel">
+
+								<p>开发时间：<small>2015年6月</small></p>
+								<p>工作详情：<small>页面设计及前端制作</small></p>
+
+							</div>
+						</div>
+						<div id="">
+							<img src="imgs/work-6.jpg" alt="" class="fade " />
+
+							<p class="flip" data-index="6">喜欢就点击吧^_^</p>
+
+							<div class="panel">
+
+								<p>开发时间：<small>2015年6月</small></p>
+								<p>工作详情：<small>页面设计及前端制作</small></p>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="section" id="section2">
+				<h1>相关技能</h1>
+				<ol style="text-align: left;" id="olList">
+					<li>熟练掌握语义化的 HTML 和具有兼容性的 CSS 模式，熟练手写符合 W3C 标准的结构和代码。</li>
+					<li>对 可用性、可访问性、前端性能优化、最优实践 等有一定的了解。</li>
+					<li>对 HTML5 和 CSS3 有一定了解。</li>
+					<li>熟练掌握 Hbuilder,Visual Studio Code等等前端开发和团队协作工具。</li>
+					<li>熟练掌握 jQuery，实现日常需要的交互效果。</li>
+					<li>熟悉Nodejs,简单了解PHP后端相关知识。</li>
+					<li>了解 Ajax 工作原理和实现方法。</li>
+					<li>对前端canvas有一定了解。</li>
+					<li>喜欢接触新事物，有一定的自学能力。</li>
+				</ol>
+
+			</div>
+			<div class="section" id="section3">
+				<div id="flex">
+					<div style="color: red;" id="hh">
+						<h1>项目能力</h1>
+
+						<ul class="ul-list">
+							<li>网站布局设计及制作，网站页面制作。</li>
+							<li>根据需求，对网站前端进行简单的修改和优化，或者转响应式处理。</li>
+							<li>企业网站建设及相关功能开发。</li>
+							<li>对于网站建设项目，我也有一些同行朋友可以推荐，也欢迎咨询！</li>
+						</ul>
+
+					</div>
+					<div style="color: red;">
+						<h1>社交网络</h1>
+						<ul class="ul-list">
+							<li>邮箱：</li>
+							<li>Q Q：</li>
+							<li>知乎：</li>
+							<li>微博：</li>
+							<li>Github：</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+
+				css3: false
+			});
+		});
+	</script>
+	<script>
+		! function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0],
+				p = /^http:/.test(d.location) ? 'http' : 'https';
+			if(!d.getElementById(id)) {
+				js = d.createElement(s);
+				js.id = id;
+				js.src = p + '://platform.twitter.com/widgets.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+		}(document, 'script', 'twitter-wjs');
+	</script>
+	<script type="text/javascript">
+		var allp = document.querySelectorAll("[data-index]");
+		var pan = document.getElementsByClassName("panel");
+		for(var i = 0; i < allp.length; i++) {
+			allp[i].onmouseenter = function(e) {
+				var num = e.target.dataset.index - 1;
+				pan[num].style.display = "block";
+			}
+			allp[i].onmouseleave = function(e) {
+				var num = e.target.dataset.index - 1;
+				pan[num].style.display = "none";
+			}
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		                                                                                                                                                                                                                                                                                                                                  
+			window.onload = function() {
+				var oTop = document.getElementById("to_top");
+				var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+				var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+				oTop.style.left = screenw - oTop.offsetWidth + "px";
+				oTop.style.top = screenh - oTop.offsetHeight + "px";
+				window.onscroll = function() {
+					var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+					oTop.style.top = screenh - oTop.offsetHeight + scrolltop + "px";
+				}
+				oTop.onclick = function() {
+					document.documentElement.scrollTop = document.body.scrollTop = 0;
+				}
+			}
+	</script>
+
+</html>
